@@ -1,326 +1,326 @@
 final List cityList = [
   {
     "display": "ADANA",
-    "value": "2nd, 3rd and 4th degree earthquake zone",
+    "value": "ADANA: 2nd, 3rd and 4th degree earthquake zone",
   },
   {
     "display": "ADIYAMAN",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "ADIYAMAN: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "AFYON",
-    "value": "2nd degree earthquake zone",
+    "value": "AFYON: 2nd degree earthquake zone",
   },
   {
     "display": "AĞRI",
-    "value": "2nd degree earthquake zone",
+    "value": "AĞRI: 2nd degree earthquake zone",
   },
   {
     "display": "AMASYA",
-    "value": "1th degree earthquake zone",
+    "value": "AMASYA: 1th degree earthquake zone",
   },
   {
     "display": "ANKARA",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "ANKARA: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "ANTALYA",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "ANTALYA: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "ARTVİN",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "ARTVİN: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "AYDIN",
-    "value": "1th degree earthquake zone",
+    "value": "AYDIN: 1th degree earthquake zone",
   },
   {
     "display": "BALIKESİR",
-    "value": "1th degree earthquake zone",
+    "value": "BALIKESİR: 1th degree earthquake zone",
   },
   {
     "display": "BİLECİK",
-    "value": "1th degree earthquake zone",
+    "value": "BİLECİK: 1th degree earthquake zone",
   },
   {
     "display": "BİNGÖL",
-    "value": "1th degree earthquake zone",
+    "value": "BİNGÖL: 1th degree earthquake zone",
   },
   {
     "display": "BOLU",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "BOLU: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "BURDUR",
-    "value": "1th degree earthquake zone",
+    "value": "BURDUR: 1th degree earthquake zone",
   },
   {
     "display": "BİTLİS",
-    "value": "1th degree earthquake zone",
+    "value": "BİTLİS: 1th degree earthquake zone",
   },
   {
     "display": "BURSA",
-    "value": "1th degree earthquake zone",
+    "value": "BURSA: 1th degree earthquake zone",
   },
   {
     "display": "ÇANAKKALE",
-    "value": "1th degree earthquake zone",
+    "value": "ÇANAKKALE: 1th degree earthquake zone",
   },
   {
     "display": "ÇANKIRI",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "ÇANKIRI: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "ÇORUM",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "ÇORUM: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "DENİZLİ",
-    "value": "1th degree earthquake zone",
+    "value": "DENİZLİ: 1th degree earthquake zone",
   },
   {
     "display": "DİYARBAKIR",
-    "value": "2nd degree earthquake zone",
+    "value": "DİYARBAKIR: 2nd degree earthquake zone",
   },
   {
     "display": "EDİRNE",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "EDİRNE: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "ELAZIĞ",
-    "value": "2nd degree earthquake zone",
+    "value": "ELAZIĞ: 2nd degree earthquake zone",
   },
   {
     "display": "ERZİNCAN",
-    "value": "1th degree earthquake zone",
+    "value": "ERZİNCAN: 1th degree earthquake zone",
   },
   {
     "display": "ERZURUM",
-    "value": "2nd degree earthquake zone",
+    "value": "ERZURUM: 2nd degree earthquake zone",
   },
   {
     "display": "ESKİŞEHİR",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "ESKİŞEHİR: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "GAZİANTEP",
-    "value": "3rd degree earthquake zone",
+    "value": "GAZİANTEP: 3rd degree earthquake zone",
   },
   {
     "display": "GİRESUN",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "GİRESUN: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "GÜMÜŞHANE",
-    "value": "3rd degree earthquake zone",
+    "value": "GÜMÜŞHANE: 3rd degree earthquake zone",
   },
   {
     "display": "HAKKARİ",
-    "value": "1th degree earthquake zone",
+    "value": "HAKKARİ: 1th degree earthquake zone",
   },
   {
     "display": "HATAY",
-    "value": "1th degree earthquake zone",
+    "value": "HATAY: 1th degree earthquake zone",
   },
   {
     "display": "ISPARTA",
-    "value": "1th degree earthquake zone",
+    "value": "ISPARTA: 1th degree earthquake zone",
   },
   {
     "display": "MERSİN",
-    "value": "3rd degree earthquake zone",
+    "value": "MERSİN: 3rd degree earthquake zone",
   },
   {
     "display": "İSTANBUL",
-    "value": "1th, 2nd and 3rd degree earthquake zone",
+    "value": "İSTANBUL: 1th, 2nd and 3rd degree earthquake zone",
   },
   {
     "display": "İZMİR",
-    "value": "1th degree earthquake zone",
+    "value": "İZMİR: 1th degree earthquake zone",
   },
   {
     "display": "KARS",
-    "value": "2nd degree earthquake zone",
+    "value": "KARS: 2nd degree earthquake zone",
   },
   {
     "display": "KASTAMONU",
-    "value": "3rd degree earthquake zone",
+    "value": "KASTAMONU: 3rd degree earthquake zone",
   },
   {
     "display": "KAYSERİ",
-    "value": "3rd degree earthquake zone",
+    "value": "KAYSERİ: 3rd degree earthquake zone",
   },
   {
     "display": "KIRKLARELİ",
-    "value": "4th degree earthquake zone",
+    "value": "KIRKLARELİ: 4th degree earthquake zone",
   },
   {
     "display": "KIRŞEHİR",
-    "value": "1th degree earthquake zone",
+    "value": "KIRŞEHİR: 1th degree earthquake zone",
   },
   {
     "display": "KOCAELİ",
-    "value": "1th degree earthquake zone",
+    "value": "KOCAELİ: 1th degree earthquake zone",
   },
   {
     "display": "KONYA",
-    "value": "3rd, 4th and 5th degree earthquake zone",
+    "value": "KONYA: 3rd, 4th and 5th degree earthquake zone",
   },
   {
     "display": "KÜTAHYA",
-    "value": "2nd degree earthquake zone",
+    "value": "KÜTAHYA: 2nd degree earthquake zone",
   },
   {
     "display": "MALATYA",
-    "value": "2nd degree earthquake zone",
+    "value": "MALATYA: 2nd degree earthquake zone",
   },
   {
     "display": "MANİSA",
-    "value": "1th degree earthquake zone",
+    "value": "MANİSA: 1th degree earthquake zone",
   },
   {
     "display": "KAHRAMANMARAŞ",
-    "value": "1th, 2nd and 3rd degree earthquake zone",
+    "value": "KAHRAMANMARAŞ: 1th, 2nd and 3rd degree earthquake zone",
   },
   {
     "display": "MARDİN",
-    "value": "3rd degree earthquake zone",
+    "value": "MARDİN: 3rd degree earthquake zone",
   },
   {
     "display": "MUĞLA",
-    "value": "1th degree earthquake zone",
+    "value": "MUĞLA: 1th degree earthquake zone",
   },
   {
     "display": "MUŞ",
-    "value": "1th degree earthquake zone",
+    "value": "MUŞ: 1th degree earthquake zone",
   },
   {
     "display": "NEVŞEHİR",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "NEVŞEHİR: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "NİĞDE",
-    "value": "4th, 5th degree earthquake zone",
+    "value": "NİĞDE: 4th, 5th degree earthquake zone",
   },
   {
     "display": "ORDU",
-    "value": "3rd degree earthquake zone",
+    "value": "ORDU: 3rd degree earthquake zone",
   },
   {
     "display": "RİZE",
-    "value": "4th degree earthquake zone",
+    "value": "RİZE: 4th degree earthquake zone",
   },
   {
     "display": "SAKARYA",
-    "value": "1th degree earthquake zone",
+    "value": "SAKARYA: 1th degree earthquake zone",
   },
   {
     "display": "SAMSUN",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "SAMSUN: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "SİİRT",
-    "value": "1th degree earthquake zone",
+    "value": "SİİRT: 1th degree earthquake zone",
   },
   {
     "display": "SİNOP",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "SİNOP: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "SİVAS",
-    "value": "3rd degree earthquake zone",
+    "value": "SİVAS: 3rd degree earthquake zone",
   },
   {
     "display": "TEKİRDAĞ",
-    "value": "2nd, 3rd degree earthquake zone",
+    "value": "TEKİRDAĞ: 2nd, 3rd degree earthquake zone",
   },
   {
     "display": "TOKAT",
-    "value": "1th degree earthquake zone",
+    "value": "TOKAT: 1th degree earthquake zone",
   },
   {
     "display": "TRABZON",
-    "value": "4th degree earthquake zone",
+    "value": "TRABZON: 4th degree earthquake zone",
   },
   {
     "display": "TUNCELİ",
-    "value": "3rd, 4th degree earthquake zone",
+    "value": "TUNCELİ: 3rd, 4th degree earthquake zone",
   },
   {
     "display": "ŞANLIURFA",
-    "value": "3rd degree earthquake zone",
+    "value": "ŞANLIURFA: 3rd degree earthquake zone",
   },
   {
     "display": "UŞAK",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "UŞAK: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "VAN",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "VAN: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "YOZGAT",
-    "value": "3rd degree earthquake zone",
+    "value": "YOZGAT: 3rd degree earthquake zone",
   },
   {
     "display": "ZONGULDAK",
-    "value": "2nd degree earthquake zone",
+    "value": "ZONGULDAK: 2nd degree earthquake zone",
   },
   {
     "display": "AKSARAY",
-    "value": "4th, 5th degree earthquake zone",
+    "value": "AKSARAY: 4th, 5th degree earthquake zone",
   },
   {
     "display": "BAYBURT",
-    "value": "3rd degree earthquake zone",
+    "value": "BAYBURT: 3rd degree earthquake zone",
   },
   {
     "display": "KARAMAN",
-    "value": "5th degree earthquake zone",
+    "value": "KARAMAN: 5th degree earthquake zone",
   },
   {
     "display": "KIRIKKALE",
-    "value": "1th degree earthquake zone",
+    "value": "KIRIKKALE: 1th degree earthquake zone",
   },
   {
     "display": "BATMAN",
-    "value": "1th, 2nd degree earthquake zone",
+    "value": "BATMAN: 1th, 2nd degree earthquake zone",
   },
   {
     "display": "ŞIRNAK",
-    "value": "3rd degree earthquake zone",
+    "value": "ŞIRNAK: 3rd degree earthquake zone",
   },
   {
     "display": "BARTIN",
-    "value": "1th degree earthquake zone",
+    "value": "BARTIN: 1th degree earthquake zone",
   },
   {
     "display": "ARDAHAN",
-    "value": "2nd degree earthquake zone",
+    "value": "ARDAHAN: 2nd degree earthquake zone",
   },
   {
     "display": "IĞDIR",
-    "value": "2nd degree earthquake zone",
+    "value": "IĞDIR: 2nd degree earthquake zone",
   },
   {
     "display": "YALOVA",
-    "value": "1th degree earthquake zone",
+    "value": "YALOVA: 1th degree earthquake zone",
   },
   {
     "display": "KARABÜK",
-    "value": "1th degree earthquake zone",
+    "value": "KARABÜK: 1th degree earthquake zone",
   },
   {
     "display": "KİLİS",
-    "value": "3th degree earthquake zone",
+    "value": "KİLİS: 3th degree earthquake zone",
   },
   {
     "display": "OSMANİYE",
-    "value": "1th degree earthquake zone",
+    "value": "OSMANİYE: 1th degree earthquake zone",
   },
   {
     "display": "DÜZCE",
-    "value": "1th degree earthquake zone",
+    "value": "DÜZCE: 1th degree earthquake zone",
   },
 ];

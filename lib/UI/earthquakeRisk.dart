@@ -13,8 +13,9 @@ class EarthquakeRisk extends StatefulWidget {
 
 class _EarthquakeRiskState extends State<EarthquakeRisk> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  String _myActivity;
-  String _myActivityResult;
+  String _myActivity = "";
+
+  String _myActivityResult = "";
   void initState() {
     super.initState();
     _myActivity = '';
@@ -66,20 +67,22 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
       appBar: CustomAppBar(
         title: Text("EARTHQUAKE RISK"),
       ),
-      body: Form(
-        key: _formKey,
-        child: Padding(
-          padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              dropdownLabel,
-              SizedBox(height: 24.0),
-              calculateButton,
-              SizedBox(height: 24.0),
-              Container(child: Text(_myActivityResult)),
-            ],
+      body: SingleChildScrollView(
+        child: Form(
+          key: _formKey,
+          child: Padding(
+            padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                dropdownLabel,
+                SizedBox(height: 24.0),
+                calculateButton,
+                SizedBox(height: 24.0),
+                Container(child: Text(_myActivityResult)),
+              ],
+            ),
           ),
         ),
       ),
