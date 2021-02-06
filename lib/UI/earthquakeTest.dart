@@ -27,21 +27,37 @@ class _EarthquakeTestState extends State<EarthquakeTest> {
       keyboardType: TextInputType.numberWithOptions(),
       autofocus: false,
       decoration: textInputDecoration.copyWith(
-        prefixIcon: Icon(Icons.dynamic_feed_outlined, color: Colors.purple),
-        hintText: "Input 1 ",
-        helperText: "Years of the building",
+          prefixIcon: Icon(Icons.dynamic_feed_outlined, color: Colors.black),
+          hintText: "...",
+          helperText: "How many floors does your building include?",
+          helperStyle: TextStyle(fontSize: 14)),
+      style: TextStyle(
+        color: Colors.black,
       ),
-      style: TextStyle(color: Colors.black),
     );
 
     final inputLabel2 = TextFormField(
+      keyboardType: TextInputType.numberWithOptions(),
       autofocus: false,
       decoration: textInputDecoration.copyWith(
-        hintText: "Input 2",
+          prefixIcon: Icon(Icons.dynamic_feed_outlined, color: Colors.black),
+          hintText: "...",
+          helperText: "Building floor count",
+          helperStyle: TextStyle(fontSize: 14)),
+      style: TextStyle(
+        color: Colors.black,
+      ),
+    );
+
+    final inputLabel3 = TextFormField(
+      autofocus: false,
+      decoration: textInputDecoration.copyWith(
+        hintText: "...",
         helperText: "Years of the building",
+        helperStyle: TextStyle(fontSize: 14),
         prefixIcon: Icon(
           FontAwesomeIcons.building,
-          color: Colors.purple,
+          color: Colors.black,
         ),
       ),
       style: TextStyle(color: Colors.black),
@@ -64,7 +80,7 @@ class _EarthquakeTestState extends State<EarthquakeTest> {
       ),
     );
     return Scaffold(
-      backgroundColor: Colors.red[500],
+      backgroundColor: Colors.brown[300],
       resizeToAvoidBottomPadding: false,
       appBar: CustomAppBar(
         title: Text("EARTHQUAKE TEST"),
@@ -82,6 +98,8 @@ class _EarthquakeTestState extends State<EarthquakeTest> {
                 inputLabel1,
                 SizedBox(height: 24.0),
                 inputLabel2,
+                SizedBox(height: 24.0),
+                inputLabel3,
                 SizedBox(height: 24.0),
                 calculateButton,
               ],

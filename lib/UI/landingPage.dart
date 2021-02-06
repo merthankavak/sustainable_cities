@@ -28,14 +28,15 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: Center(
           child: Text(
-            "EARTHQUAKE RISK",
-            style: TextStyle(color: Colors.white),
+            "EARTHQUAKE QUIZ",
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
       onTap: () async {
         await _changeLoadingVisible();
-        await Navigator.popAndPushNamed(context, "/earthquakerisk");
+        await Navigator.popAndPushNamed(context, "/earthquakequiz");
       },
     );
 
@@ -50,7 +51,8 @@ class _LandingPageState extends State<LandingPage> {
         child: Center(
           child: Text(
             "EARTHQUAKE TEST",
-            style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -71,7 +73,8 @@ class _LandingPageState extends State<LandingPage> {
         child: Center(
           child: Text(
             "EARTHQUAKE INFORMATION",
-            style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -92,7 +95,8 @@ class _LandingPageState extends State<LandingPage> {
         child: Center(
           child: Text(
             "ABOUT",
-            style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -104,28 +108,25 @@ class _LandingPageState extends State<LandingPage> {
         title: Text("UYGULAMA ISMI"),
         centerTitle: true,
         backgroundColor: Colors.black,
-        toolbarHeight: 100,
+        toolbarHeight: 65,
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
-        child: Column(
-          children: <Widget>[
-            Expanded(
-              child: GridView.count(
-                padding: EdgeInsets.all(4.0),
-                shrinkWrap: true,
-                mainAxisSpacing: 4,
-                crossAxisSpacing: 4,
-                crossAxisCount: 2,
-                children: <Widget>[
-                  gridViewElement,
-                  gridViewElement2,
-                  gridViewElement3,
-                  gridViewElement4
-                ],
-              ),
-            ),
-          ],
+        child: Center(
+          child: GridView.count(
+            padding: EdgeInsets.all(14.0),
+            shrinkWrap: true,
+            mainAxisSpacing: 15,
+            crossAxisSpacing: 15,
+            crossAxisCount: 2,
+            childAspectRatio: 0.65,
+            children: <Widget>[
+              gridViewElement,
+              gridViewElement2,
+              gridViewElement3,
+              gridViewElement4
+            ],
+          ),
         ),
       ),
     );
