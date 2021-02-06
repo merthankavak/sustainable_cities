@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sustainable_cities/Components/constants.dart';
 
 import 'package:sustainable_cities/Components/customAppBar.dart';
+import 'package:sustainable_cities/Components/questionList.dart';
 
 import 'package:sustainable_cities/UI/loadingBar.dart';
 import 'package:sustainable_cities/UI/EarthQuakeQuiz/quiz.dart';
@@ -27,9 +27,11 @@ class _EarthquakeQuizState extends State<EarthquakeQuiz> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:
+          _questionIndex == 12 ? resultColor(_totalScore) : Colors.white,
       resizeToAvoidBottomPadding: false,
       appBar: CustomAppBar(
-        title: Text("EARTHQUAKE RISK"),
+        title: Text("EARTHQUAKE QUIZ"),
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
@@ -65,6 +67,20 @@ class _EarthquakeQuizState extends State<EarthquakeQuiz> {
       print('We have more questions!');
     } else {
       print('No more questions!');
+    }
+  }
+
+  Color resultColor(int resultScore) {
+    if (resultScore >= 0 && resultScore <= 6) {
+      return Colors.green[800];
+    } else if (resultScore >= 7 && resultScore <= 12) {
+      return Colors.green[200];
+    } else if (resultScore >= 13 && resultScore <= 20) {
+      return Colors.red[200];
+    } else if (resultScore >= 21 && resultScore <= 60) {
+      return Colors.red[800];
+    } else {
+      return Colors.white;
     }
   }
 }

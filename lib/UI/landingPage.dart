@@ -18,7 +18,7 @@ class _LandingPageState extends State<LandingPage> {
 
   @override
   Widget build(BuildContext context) {
-    final gridViewElement = InkWell(
+    final gridViewElement1 = InkWell(
       highlightColor: Colors.black,
       borderRadius: BorderRadius.circular(20),
       child: Ink(
@@ -28,14 +28,15 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: Center(
           child: Text(
-            "EARTHQUAKE RISK",
+            "EARTHQUAKE QUIZ",
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
         ),
       ),
       onTap: () async {
         await _changeLoadingVisible();
-        await Navigator.popAndPushNamed(context, "/earthquakerisk");
+        await Navigator.popAndPushNamed(context, "/earthquakequiz");
       },
     );
 
@@ -49,14 +50,15 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: Center(
           child: Text(
-            "EARTHQUAKE TEST",
+            "",
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
         ),
       ),
       onTap: () async {
         await _changeLoadingVisible();
-        await Navigator.popAndPushNamed(context, "/earthquaketest");
+        await Navigator.popAndPushNamed(context, "/earthquakerisk");
       },
     );
 
@@ -71,6 +73,7 @@ class _LandingPageState extends State<LandingPage> {
         child: Center(
           child: Text(
             "EARTHQUAKE INFORMATION",
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white),
           ),
         ),
@@ -92,7 +95,8 @@ class _LandingPageState extends State<LandingPage> {
         child: Center(
           child: Text(
             "ABOUT",
-            style: TextStyle(color: Colors.white),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.white, fontSize: 25),
           ),
         ),
       ),
@@ -108,24 +112,18 @@ class _LandingPageState extends State<LandingPage> {
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
-        child: Column(
-          children: <Widget>[
-            Expanded(
-              child: GridView.count(
-                padding: EdgeInsets.all(4.0),
-                shrinkWrap: true,
-                mainAxisSpacing: 4,
-                crossAxisSpacing: 4,
-                crossAxisCount: 2,
-                children: <Widget>[
-                  gridViewElement,
-                  gridViewElement2,
-                  gridViewElement3,
-                  gridViewElement4
-                ],
-              ),
-            ),
-          ],
+        child: Center(
+          child: GridView.count(
+            mainAxisSpacing: 5,
+            crossAxisSpacing: 5,
+            crossAxisCount: 2,
+            children: <Widget>[
+              gridViewElement1,
+              gridViewElement2,
+              gridViewElement3,
+              gridViewElement4
+            ],
+          ),
         ),
       ),
     );
