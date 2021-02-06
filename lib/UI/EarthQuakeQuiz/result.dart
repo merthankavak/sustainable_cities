@@ -7,22 +7,27 @@ class Result extends StatelessWidget {
   Result(this.resultScore, this.resetHandler);
 
   //Remark Logic
+
   String get resultPhrase {
     String resultText;
-    if (resultScore >= 41) {
-      resultText = 'You are in safe!';
+
+    if (resultScore >= 0 && resultScore <= 6) {
+      resultText = 'There is no critical earthquake risk in your construction!';
+
       print(resultScore);
-    } else if (resultScore >= 31) {
-      resultText = 'Pretty likeable!';
+    } else if (resultScore >= 7 && resultScore <= 12) {
+      resultText = 'Your construction has low level earthquake risk. ';
+
       print(resultScore);
-    } else if (resultScore >= 21) {
-      resultText = 'You need to change sth';
-    } else if (resultScore >= 1) {
-      resultText = 'You need to move another apart';
+    } else if (resultScore >= 13 && resultScore <= 20) {
+      resultText =
+          'Your construction has medium level earthquake risk. It needs to be inspect. ';
+    } else if (resultScore >= 21 && resultScore <= 60) {
+      resultText = 'Your construction is not durable to the earthquakes.';
     } else {
-      resultText = 'You are in danger!';
       print(resultScore);
     }
+
     return resultText;
   }
 
@@ -38,7 +43,7 @@ class Result extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           Text(
-            'Your EarthQuake Risk ' '$resultScore',
+            'Your EarthQuake Risk Score ' '$resultScore',
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),

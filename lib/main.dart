@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:sustainable_cities/Services/routes.dart';
 import 'package:sustainable_cities/UI/EarthQuakeQuiz/earthquakeQuiz.dart';
 
-import 'package:sustainable_cities/UI/earthquakeTest.dart';
+import 'package:sustainable_cities/UI/earthquakeRisk.dart';
 import 'package:sustainable_cities/UI/informationPage.dart';
 import 'package:sustainable_cities/UI/landingPage.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: LandingPage(),
       routes: {
-        Routes.earthquaketest: (context) => EarthquakeTest(),
+        Routes.earthquakerisk: (context) => EarthquakeRisk(),
         Routes.earthquakequiz: (context) => EarthquakeQuiz(),
         Routes.informationpage: (context) => InformationPage(),
         Routes.landingpage: (context) => LandingPage(),
