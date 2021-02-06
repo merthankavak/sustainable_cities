@@ -10,3 +10,7 @@ final textInputDecoration = InputDecoration(
     borderSide: BorderSide(color: Colors.red, width: 2),
   ),
 );
+
+Widget containerWithColor = Container(
+  color: Colors.blue.withAlpha(300),
+);

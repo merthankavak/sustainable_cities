@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'package:sustainable_cities/Components/customAppBar.dart';
 
 import 'package:sustainable_cities/UI/loadingBar.dart';
 
@@ -21,25 +22,8 @@ class _InformationPageState extends State<InformationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        toolbarHeight: 70,
-        backgroundColor: Colors.black,
-        centerTitle: true,
+      appBar: CustomAppBar(
         title: Text("INFORMATION"),
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 12.0, top: 5),
-          child: CircleAvatar(
-            backgroundColor: Colors.blue,
-            child: IconButton(
-              color: Colors.white,
-              icon: Icon(FontAwesomeIcons.arrowLeft),
-              onPressed: () async {
-                await _changeLoadingVisible();
-                await Navigator.popAndPushNamed(context, '/homepage');
-              },
-            ),
-          ),
-        ),
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
@@ -54,11 +38,5 @@ class _InformationPageState extends State<InformationPage> {
         ),
       ),
     );
-  }
-
-  Future<void> _changeLoadingVisible() async {
-    setState(() {
-      _loadingVisible = !_loadingVisible;
-    });
   }
 }

@@ -5,13 +5,13 @@ import 'package:sustainable_cities/Components/customAppBar.dart';
 
 import 'package:sustainable_cities/UI/loadingBar.dart';
 
-class HomePage extends StatefulWidget {
-  static const String routeName = '/homepage';
+class EarthquakeRisk extends StatefulWidget {
+  static const String routeName = '/earthquakerisk';
   @override
-  _HomePageState createState() => _HomePageState();
+  _EarthquakeRiskState createState() => _EarthquakeRiskState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _EarthquakeRiskState extends State<EarthquakeRisk> {
   bool _loadingVisible = false;
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -60,44 +60,40 @@ class _HomePageState extends State<HomePage> {
           'CALCULATE',
           style: TextStyle(color: Colors.white),
         ),
-        onPressed: () async {
-          await _changeLoadingVisible();
-          await Navigator.popAndPushNamed(context, "/analysispage");
-        },
+        onPressed: () async {},
       ),
     );
     return Scaffold(
-      backgroundColor: Colors.red[500],
       resizeToAvoidBottomPadding: false,
       appBar: CustomAppBar(
-        title: Text("EARTHQUAKE"),
+        title: Text("EARTHQUAKE RISK"),
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
         child: Form(
           key: _formKey,
-          child: Padding(
-            padding: const EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                inputLabel1,
-                SizedBox(height: 24.0),
-                inputLabel2,
-                SizedBox(height: 24.0),
-                calculateButton,
-              ],
-            ),
+          child: Stack(
+            children: <Widget>[
+              containerWithColor,
+              Padding(
+                padding:
+                    const EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    inputLabel1,
+                    SizedBox(height: 24.0),
+                    inputLabel2,
+                    SizedBox(height: 24.0),
+                    calculateButton,
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),
     );
-  }
-
-  Future<void> _changeLoadingVisible() async {
-    setState(() {
-      _loadingVisible = !_loadingVisible;
-    });
   }
 }

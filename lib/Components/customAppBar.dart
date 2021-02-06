@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomAppBar extends StatefulWidget with PreferredSizeWidget {
   final Widget title;
@@ -31,14 +32,24 @@ class _CustomAppBarState extends State<CustomAppBar> {
               icon: Icon(
                 Icons.help,
               ),
-              onPressed: () async {
-                await _changeLoadingVisible();
-                await Navigator.popAndPushNamed(context, '/informationpage');
-              },
+              onPressed: () async {},
             ),
           ),
         )
       ],
+      leading: Padding(
+        padding: const EdgeInsets.only(right: 12.0, top: 5),
+        child: IconButton(
+          color: Colors.white,
+          icon: Icon(
+            FontAwesomeIcons.arrowLeft,
+          ),
+          onPressed: () async {
+            await _changeLoadingVisible();
+            await Navigator.popAndPushNamed(context, '/landingpage');
+          },
+        ),
+      ),
     );
   }
 
