@@ -14,7 +14,7 @@ class EarthquakeRisk extends StatefulWidget {
 class _EarthquakeRiskState extends State<EarthquakeRisk> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String _myActivity = "";
-
+  bool _visible = false;
   String _myActivityResult = "";
   void initState() {
     super.initState();
@@ -32,12 +32,12 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
         value: _myActivity,
         onSaved: (value) {
           setState(() {
-            _myActivity = value;
+            value == null ? _visible = false : _myActivity = value;
           });
         },
         onChanged: (value) {
           setState(() {
-            _myActivity = value;
+            value == null ? _visible = false : _myActivity = value;
           });
         },
         dataSource: cityList,
@@ -57,6 +57,7 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
           style: TextStyle(color: Colors.white),
         ),
         onPressed: () async {
+          _visible = true;
           await _saveForm();
         },
       ),
@@ -80,7 +81,50 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
                 SizedBox(height: 24.0),
                 calculateButton,
                 SizedBox(height: 24.0),
-                Container(child: Text(_myActivityResult)),
+                Visibility(
+                  visible: _visible,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    width: MediaQuery.of(context).size.width,
+                    height: 100,
+                    child: Center(
+                      child: Text(
+                        _myActivityResult,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Visibility(
+                  visible: _visible,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(30),
+                    child: Ink(
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      child: Center(
+                        child: Text(
+                          "HOW TO PREVENT EARTHQUAKE DAMAGE",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    onTap: () async {
+                      await Navigator.popAndPushNamed(
+                          context, "/informationpage");
+                    },
+                  ),
+                ),
               ],
             ),
           ),

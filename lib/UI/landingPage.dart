@@ -50,7 +50,7 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: Center(
           child: Text(
-            "EARTHQUAKE TEST",
+            "EARTHQUAKE RISK",
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 22),
           ),
@@ -119,7 +119,7 @@ class _LandingPageState extends State<LandingPage> {
             mainAxisSpacing: 15,
             crossAxisSpacing: 15,
             crossAxisCount: 2,
-            childAspectRatio: 0.65,
+            childAspectRatio: 0.70,
             children: <Widget>[
               gridViewElement1,
               gridViewElement2,
