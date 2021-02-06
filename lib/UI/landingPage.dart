@@ -30,7 +30,7 @@ class _LandingPageState extends State<LandingPage> {
           child: Text(
             "EARTHQUAKE QUIZ",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -50,9 +50,9 @@ class _LandingPageState extends State<LandingPage> {
         ),
         child: Center(
           child: Text(
-            "",
+            "EARTHQUAKE TEST",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -74,7 +74,7 @@ class _LandingPageState extends State<LandingPage> {
           child: Text(
             "EARTHQUAKE INFORMATION",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -96,7 +96,7 @@ class _LandingPageState extends State<LandingPage> {
           child: Text(
             "ABOUT",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white, fontSize: 25),
+            style: TextStyle(color: Colors.white, fontSize: 22),
           ),
         ),
       ),
@@ -108,15 +108,18 @@ class _LandingPageState extends State<LandingPage> {
         title: Text("UYGULAMA ISMI"),
         centerTitle: true,
         backgroundColor: Colors.black,
-        toolbarHeight: 100,
+        toolbarHeight: 65,
       ),
       body: Loading(
         inAsyncCall: _loadingVisible,
         child: Center(
           child: GridView.count(
-            mainAxisSpacing: 5,
-            crossAxisSpacing: 5,
+            padding: EdgeInsets.all(14.0),
+            shrinkWrap: true,
+            mainAxisSpacing: 15,
+            crossAxisSpacing: 15,
             crossAxisCount: 2,
+            childAspectRatio: 0.65,
             children: <Widget>[
               gridViewElement1,
               gridViewElement2,
