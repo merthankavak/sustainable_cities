@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quizInformation.dart';
-import 'package:sustainable_cities/Screens/EarthQuakeRisk/earthquakePrevent.dart';
-import 'package:sustainable_cities/Screens/EarthQuakeRisk/earthquakeRisk.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakePrevent.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakeZones.dart';
 
 import 'package:sustainable_cities/Services/routes.dart';
 
 import 'Screens/EarthQuakeQuiz/earthquakeQuiz.dart';
-import 'Screens/informationPage.dart';
+import 'Screens/EarthQuakeEconomy/earthquakeEconomy.dart';
 import 'Screens/landingPage.dart';
 
 class MyApp extends StatelessWidget {
@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: LandingPage(),
       routes: {
-        Routes.earthquakerisk: (context) => EarthquakeRisk(),
-        Routes.earthquakequiz: (context) => EarthquakeQuiz(),
-        Routes.informationpage: (context) => InformationPage(),
-        Routes.landingpage: (context) => LandingPage(),
+        Routes.earthquakeZones: (context) => EarthQuakeZones(),
+        Routes.earthquakeQuiz: (context) => EarthQuakeQuiz(),
+        Routes.earthquakeEconomy: (context) => EarthQuakeEconomy(),
+        Routes.landingPage: (context) => LandingPage(),
         Routes.quizInformation: (context) => QuizInformation(),
         Routes.earthquakePrevent: (context) => EarthQuakePrevent(),
       },

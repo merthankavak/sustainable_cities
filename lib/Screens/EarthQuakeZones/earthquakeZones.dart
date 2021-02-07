@@ -5,16 +5,17 @@ import 'package:sustainable_cities/Components/constants.dart';
 import 'package:sustainable_cities/Components/customScaffold.dart';
 import 'package:sustainable_cities/Data/cityList.dart';
 
-class EarthquakeRisk extends StatefulWidget {
-  static const String routeName = '/earthquakerisk';
+class EarthQuakeZones extends StatefulWidget {
+  static const String routeName = '/earthquakeZones';
   @override
-  _EarthquakeRiskState createState() => _EarthquakeRiskState();
+  _EarthQuakeZonesState createState() => _EarthQuakeZonesState();
 }
 
-class _EarthquakeRiskState extends State<EarthquakeRisk> {
+class _EarthQuakeZonesState extends State<EarthQuakeZones> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   String _myActivity = "";
   bool _visible = false;
+
   String _myActivityResult = "";
   void initState() {
     super.initState();
@@ -63,7 +64,7 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
     );
     return CustomScaffold(
       isBack: true,
-      title: "EARTHQUAKE RISK",
+      title: "EARTHQUAKE ZONES",
       body: Form(
         key: _formKey,
         child: Padding(
@@ -79,7 +80,8 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
               Visibility(
                 visible: _visible,
                 child: Container(
-                  decoration: boxDecoration.copyWith(color: Colors.red),
+                  decoration: boxDecoration.copyWith(
+                      color: resultColor(_myActivityResult)),
                   width: MediaQuery.of(context).size.width,
                   height: 100,
                   child: Center(
@@ -95,6 +97,7 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
               Visibility(
                 visible: _visible,
                 child: InkWell(
+                  highlightColor: Colors.black,
                   borderRadius: borderRadius,
                   child: Ink(
                     decoration: boxDecoration.copyWith(color: Colors.green),
@@ -102,7 +105,7 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
                     height: 100,
                     child: Center(
                       child: Text(
-                        "HOW TO PREVENT EARTHQUAKE DAMAGE",
+                        "HOW TO PREVENT EARTHQUAKE DAMAGE?",
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white, fontSize: 18),
                       ),
@@ -119,6 +122,19 @@ class _EarthquakeRiskState extends State<EarthquakeRisk> {
         ),
       ),
     );
+  }
+
+  // Return color by Earthquake Zone Level
+  Color resultColor(String value) {
+    if (value.contains("1")) {
+      return Colors.red[800];
+    } else if (value.contains("2")) {
+      return Colors.red[400];
+    } else if (value.contains("3")) {
+      return Colors.red[200];
+    } else {
+      return Colors.white;
+    }
   }
 
   _saveForm() {

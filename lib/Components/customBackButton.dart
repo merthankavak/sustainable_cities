@@ -8,7 +8,7 @@ class CustomBackButton extends StatelessWidget {
       icon: Icon(
         Icons.arrow_back,
       ),
-      onPressed: () => Navigator.popAndPushNamed(context, "/landingpage"),
+      onPressed: () => Navigator.popAndPushNamed(context, "/landingPage"),
     );
   }
 }

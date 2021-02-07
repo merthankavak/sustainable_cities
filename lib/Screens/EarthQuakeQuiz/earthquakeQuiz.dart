@@ -5,13 +5,13 @@ import 'package:sustainable_cities/Data/questionList.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quiz.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/result.dart';
 
-class EarthquakeQuiz extends StatefulWidget {
-  static const String routeName = '/earthquakequiz';
+class EarthQuakeQuiz extends StatefulWidget {
+  static const String routeName = '/earthquakeQuiz';
   @override
-  _EarthquakeQuizState createState() => _EarthquakeQuizState();
+  _EarthQuakeQuizState createState() => _EarthQuakeQuizState();
 }
 
-class _EarthquakeQuizState extends State<EarthquakeQuiz> {
+class _EarthQuakeQuizState extends State<EarthQuakeQuiz> {
   var _questionIndex = 0;
   var _totalScore = 0;
 
@@ -26,7 +26,7 @@ class _EarthquakeQuizState extends State<EarthquakeQuiz> {
       icon: Icons.help,
       routeName: "/quizInformation",
       isBack: true,
-      title: "EarthQuake Damage",
+      title: "EARTHQUAKE QUIZ",
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Container(

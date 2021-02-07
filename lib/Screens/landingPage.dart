@@ -4,7 +4,7 @@ import 'package:sustainable_cities/Components/customInkwell.dart';
 import 'package:sustainable_cities/Components/customScaffold.dart';
 
 class LandingPage extends StatefulWidget {
-  static const String routeName = '/landingpage';
+  static const String routeName = '/landingPage';
   @override
   _LandingPageState createState() => _LandingPageState();
 }
@@ -24,27 +24,27 @@ class _LandingPageState extends State<LandingPage> {
         childAspectRatio: 0.70,
         children: <Widget>[
           CustomInkWell(
-            title: "EARTHQUAKE DAMAGE",
+            title: "ARE YOU UNDER RISK?",
             icon: FontAwesomeIcons.questionCircle,
-            routeName: "/earthquakequiz",
-            color: Colors.blue,
+            routeName: "/earthquakeQuiz",
+            color: Colors.red,
           ),
           CustomInkWell(
-            title: "EARTHQUAKE ZONE RISK",
-            icon: Icons.dangerous,
-            routeName: "/earthquakerisk",
-            color: Colors.blue,
+            title: "EARTHQUAKE ZONES",
+            icon: FontAwesomeIcons.mapMarked,
+            routeName: "/earthquakeZones",
+            color: Colors.orange,
           ),
           CustomInkWell(
-            title: "EARTHQUAKE INFORMATION",
-            icon: FontAwesomeIcons.infoCircle,
-            routeName: "/informationpage",
-            color: Colors.blue,
+            title: "EFFECTS OF EARTHQUAKE",
+            icon: FontAwesomeIcons.chartLine,
+            routeName: "/earthquakeEconomy",
+            color: Colors.green[800],
           ),
           CustomInkWell(
             title: "ABOUT US",
             icon: FontAwesomeIcons.accessibleIcon,
-            routeName: "/landingpage",
+            routeName: "/lastEarthQuakes",
             color: Colors.blue,
           ),
         ],
