@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+import 'package:sustainable_cities/Components/customAppBar.dart';
+
+class CustomScaffold extends StatelessWidget {
+  final Widget body;
+  final String title;
+  final String backButton;
+  final bool isBack;
+  final IconData icon;
+  final String routeName;
+  const CustomScaffold({
+    Key key,
+    this.body,
+    this.title,
+    this.backButton,
+    this.isBack,
+    this.icon,
+    this.routeName,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomPadding: false,
+      appBar: CustomAppBar(
+        title: title,
+        isBack: isBack,
+        icon: icon,
+        routeName: routeName,
+      ),
+      body: body,
+    );
+  }
+}

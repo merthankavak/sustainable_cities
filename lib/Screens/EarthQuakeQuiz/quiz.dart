@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:sustainable_cities/Models/questionsModel.dart';
-import 'package:sustainable_cities/UI/EarthQuakeQuiz/answer.dart';
-import 'package:sustainable_cities/UI/EarthQuakeQuiz/question.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeQuiz/answer.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeQuiz/question.dart';
 
 class Quiz extends StatelessWidget {
   final List<QuestionModel> questions;

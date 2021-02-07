@@ -1,61 +1,39 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sustainable_cities/Components/customBackButton.dart';
 
-class CustomAppBar extends StatefulWidget with PreferredSizeWidget {
-  final Widget title;
-  CustomAppBar({Key key, this.title}) : super(key: key);
-
-  @override
-  _CustomAppBarState createState() => _CustomAppBarState();
-  @override
-  Size get preferredSize => Size.fromHeight(70);
-}
-
-class _CustomAppBarState extends State<CustomAppBar> {
-  bool _loadingVisible = false;
+class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
+  final String title;
+  final bool isBack;
+  final String routeName;
+  final IconData icon;
+  const CustomAppBar(
+      {Key key, this.title, this.isBack, this.icon, this.routeName})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.black,
       centerTitle: true,
-      title: Padding(
-        padding: const EdgeInsets.only(top: 5),
-        child: widget.title,
+      title: Text(title),
+      leading: Visibility(
+        visible: isBack,
+        child: CustomBackButton(),
       ),
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 12.0, top: 5),
-          child: CircleAvatar(
-            backgroundColor: Colors.green,
-            child: IconButton(
-              color: Colors.white,
-              icon: Icon(
-                Icons.help,
-              ),
-              onPressed: () async {},
+          child: IconButton(
+            color: Colors.white,
+            icon: Icon(
+              icon,
             ),
+            onPressed: () => Navigator.popAndPushNamed(context, routeName),
           ),
         )
       ],
-      leading: Padding(
-        padding: const EdgeInsets.only(right: 12.0, top: 5),
-        child: IconButton(
-          color: Colors.white,
-          icon: Icon(
-            FontAwesomeIcons.arrowLeft,
-          ),
-          onPressed: () async {
-            await _changeLoadingVisible();
-            await Navigator.popAndPushNamed(context, '/landingpage');
-          },
-        ),
-      ),
     );
   }
 
-  Future<void> _changeLoadingVisible() async {
-    setState(() {
-      _loadingVisible = !_loadingVisible;
-    });
-  }
+  @override
+  Size get preferredSize => Size.fromHeight(70);
 }

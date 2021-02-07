@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quizInformation.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeRisk/earthquakePrevent.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeRisk/earthquakeRisk.dart';
 
 import 'package:sustainable_cities/Services/routes.dart';
-import 'package:sustainable_cities/UI/EarthQuakeQuiz/earthquakeQuiz.dart';
 
-import 'package:sustainable_cities/UI/earthquakeRisk.dart';
-import 'package:sustainable_cities/UI/informationPage.dart';
-import 'package:sustainable_cities/UI/landingPage.dart';
+import 'Screens/EarthQuakeQuiz/earthquakeQuiz.dart';
+import 'Screens/informationPage.dart';
+import 'Screens/landingPage.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
         Routes.earthquakequiz: (context) => EarthquakeQuiz(),
         Routes.informationpage: (context) => InformationPage(),
         Routes.landingpage: (context) => LandingPage(),
+        Routes.quizInformation: (context) => QuizInformation(),
+        Routes.earthquakePrevent: (context) => EarthQuakePrevent(),
       },
     );
   }

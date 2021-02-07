@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:sustainable_cities/Components/customButton.dart';
 
 class Result extends StatelessWidget {
   final int resultScore;
   final Function resetHandler;
-
   Result(this.resultScore, this.resetHandler);
 
   //Remark Logic
-
   String get resultPhrase {
     String resultText;
-
     if (resultScore >= 0 && resultScore <= 6) {
       resultText = 'There is no critical earthquake risk in your construction!';
-
       print(resultScore);
     } else if (resultScore >= 7 && resultScore <= 12) {
       resultText = 'Your construction has low level earthquake risk. ';
@@ -27,7 +24,6 @@ class Result extends StatelessWidget {
     } else {
       print(resultScore);
     }
-
     return resultText;
   }
 
@@ -39,20 +35,19 @@ class Result extends StatelessWidget {
         children: <Widget>[
           Text(
             resultPhrase,
-            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
             textAlign: TextAlign.center,
           ),
           Text(
             'Your EarthQuake Risk Score ' '$resultScore',
-            style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
             textAlign: TextAlign.center,
           ),
-          FlatButton(
-            child: Text(
-              'Restart Quiz!',
-            ),
-            textColor: Colors.blue,
-            onPressed: resetHandler,
+          CustomButton(
+            title: 'Restart Quiz!',
+            onPress: resetHandler,
           ),
         ],
       ),

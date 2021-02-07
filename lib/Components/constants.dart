@@ -14,3 +14,11 @@ final textInputDecoration = InputDecoration(
 Widget containerWithColor = Container(
   color: Colors.blue.withAlpha(300),
 );
+
+final boxDecoration = BoxDecoration(
+  borderRadius: BorderRadius.circular(20),
+  color: Colors.orange,
+);
+
+final borderRadius = BorderRadius.circular(20);
+final sizedBox = SizedBox(height: 24.0);
