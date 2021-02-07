@@ -71,4 +71,4 @@ flutter run
 ### [Merthan **Kavak**](https://github.com/merthankavak)  
 ### [Alper **Tekin**](https://github.com/alpertknn)  
 ### [İlker **Kararmış**](https://github.com/Inventore0)  
-#### [Efe **Ünverdi**](https://github.com/rohanbanerjee)
+### [Efe **Ünverdi**](https://github.com/midnightcoke)
