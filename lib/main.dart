@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quizInformation.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakePrevent.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakeZones.dart';
+import 'package:sustainable_cities/Screens/emergencyCall.dart';
 
 import 'package:sustainable_cities/Services/routes.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         Routes.landingPage: (context) => LandingPage(),
         Routes.quizInformation: (context) => QuizInformation(),
         Routes.earthquakePrevent: (context) => EarthQuakePrevent(),
+        Routes.emergencyCall: (context) => EmergencyCall(),
       },
     );
   }

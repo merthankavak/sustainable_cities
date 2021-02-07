@@ -14,7 +14,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return CustomScaffold(
       isBack: false,
-      title: "UYGULAMA ISMI",
+      title: "EARTHQUAKE HELPER",
       body: GridView.count(
         padding: EdgeInsets.all(14.0),
         shrinkWrap: true,
@@ -42,9 +42,9 @@ class _LandingPageState extends State<LandingPage> {
             color: Colors.green[800],
           ),
           CustomInkWell(
-            title: "ABOUT US",
-            icon: FontAwesomeIcons.accessibleIcon,
-            routeName: "/lastEarthQuakes",
+            title: "EMERGENCY CALL",
+            icon: Icons.warning,
+            routeName: "/emergencyCall",
             color: Colors.blue,
           ),
         ],
