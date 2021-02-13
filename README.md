@@ -1,16 +1,74 @@
-# sustainable_cities
+# EarthQuake Helper / Flutter App
+> Know your risk of Earthquake disaster
+## Main Goal of This Project
 
-A new Flutter project.
+In our project, we have benefited from the principle of "inclusive, safe, returning cities and human settlements", which is a global goal in the future. As you know, protection from natural disasters and taking precautions are among the most important issues today. We have developed an application that can provide useful help and information.
+#
 
-## Getting Started
+## Main features:
 
-This project is a starting point for a Flutter application.
+* Provides information about earthquake precautions.
+* Information about the economic situation before and after the disaster.
+* Find out the earthquake risk in your house.
+* Know your city's earthquake risk.
 
-A few resources to get you started if this is your first Flutter project:
+#
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## How to Use 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Step 1:**
+
+Download or clone this repo by using the link below:
+
+```
+https://github.com/merthankavak/sustainable_cities
+```
+
+for **ssh** 
+
+```
+git clone git@github.com:merthankavak/sustainable_cities.git
+```
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get 
+```
+**Step 3:**
+
+To run this project all we have to do is run this command
+
+```
+flutter run 
+```
+
+# Screenshots of this projects
+## Main page
+![Main Page](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/1.png)
+
+## EarthQuake Quiz
+![EarthQuake Quiz](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/2.png)
+
+## EarthQuake Quiz Result
+![EarthQuake Quiz Result](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/3.png)
+
+## EarthQuake Zones
+![EarthQuake Zones](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/4.png)
+
+## How To Prevent?
+![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/5.png)
+
+## Effects Of EarthQuake
+![Effects_Of_EarthQuake](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/6.png)
+
+## Emergency
+![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/7.png)
+
+## Team NiceTRY -- Members:
+### [Merthan **Kavak**](https://github.com/merthankavak)  
+### [Alper **Tekin**](https://github.com/alpertknn)  
+### [İlker **Kararmış**](https://github.com/Inventore0)  
+### [Efe **Ünverdi**](https://github.com/midnightcoke)
