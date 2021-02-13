@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:sustainable_cities/Components/customInkwell.dart';
-import 'package:sustainable_cities/Components/customScaffold.dart';
+import 'package:sustainable_cities/Components/custom_inkwell.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
 
 class LandingPage extends StatefulWidget {
   static const String routeName = '/landingPage';

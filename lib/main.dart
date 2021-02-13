@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quizInformation.dart';
-import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakePrevent.dart';
-import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquakeZones.dart';
-import 'package:sustainable_cities/Screens/emergencyCall.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quiz_information.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquake_prevent.dart';
+import 'package:sustainable_cities/Screens/EarthQuakeZones/earthquake_zones.dart';
+import 'package:sustainable_cities/Screens/emergency_call.dart';
 
 import 'package:sustainable_cities/Services/routes.dart';
 
-import 'Screens/EarthQuakeQuiz/earthquakeQuiz.dart';
-import 'Screens/EarthQuakeEconomy/earthquakeEconomy.dart';
-import 'Screens/landingPage.dart';
+import 'Screens/EarthQuakeQuiz/earthquake_quiz.dart';
+import 'Screens/EarthQuakeEconomy/earthquake_economy.dart';
+import 'Screens/landing_page.dart';
 
 class MyApp extends StatelessWidget {
   @override

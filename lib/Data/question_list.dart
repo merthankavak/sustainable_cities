@@ -1,5 +1,5 @@
-import 'package:sustainable_cities/Models/answersModel.dart';
-import 'package:sustainable_cities/Models/questionsModel.dart';
+import 'package:sustainable_cities/Models/answers_model.dart';
+import 'package:sustainable_cities/Models/questions_model.dart';
 
 final List<QuestionModel> questionsList = [
   QuestionModel(

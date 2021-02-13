@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:sustainable_cities/Components/customScaffold.dart';
-import 'package:sustainable_cities/Data/questionList.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
+import 'package:sustainable_cities/Data/question_list.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/quiz.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/result.dart';
 

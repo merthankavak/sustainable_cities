@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import 'package:sustainable_cities/Components/customScaffold.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
 
 final List<String> images = [
   'assets/images/sliderImage1.png',

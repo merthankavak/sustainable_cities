@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:sustainable_cities/Models/questionsModel.dart';
+import 'package:sustainable_cities/Models/questions_model.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/answer.dart';
 import 'package:sustainable_cities/Screens/EarthQuakeQuiz/question.dart';
 

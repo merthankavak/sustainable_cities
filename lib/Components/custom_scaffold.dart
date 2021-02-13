@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sustainable_cities/Components/customAppBar.dart';
+import 'package:sustainable_cities/Components/custom_appbar.dart';
 
 class CustomScaffold extends StatelessWidget {
   final Widget body;

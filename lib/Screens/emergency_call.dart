@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart' as UrlLauncher;
-import 'package:sustainable_cities/Components/customScaffold.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
 
 class EmergencyCall extends StatefulWidget {
   static const String routeName = '/emergencyCall';

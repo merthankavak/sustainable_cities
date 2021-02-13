@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sustainable_cities/Components/customScaffold.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
 
 class QuizInformation extends StatefulWidget {
   static const String routeName = '/quizInformation';

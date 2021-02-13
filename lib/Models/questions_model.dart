@@ -1,4 +1,4 @@
-import 'package:sustainable_cities/Models/answersModel.dart';
+import 'package:sustainable_cities/Models/answers_model.dart';
 
 class QuestionModel {
   String questionText;

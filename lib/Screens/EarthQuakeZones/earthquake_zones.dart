@@ -2,8 +2,8 @@ import 'package:dropdown_formfield/dropdown_formfield.dart';
 
 import 'package:flutter/material.dart';
 import 'package:sustainable_cities/Components/constants.dart';
-import 'package:sustainable_cities/Components/customScaffold.dart';
-import 'package:sustainable_cities/Data/cityList.dart';
+import 'package:sustainable_cities/Components/custom_scaffold.dart';
+import 'package:sustainable_cities/Data/city_list.dart';
 
 class EarthQuakeZones extends StatefulWidget {
   static const String routeName = '/earthquakeZones';
