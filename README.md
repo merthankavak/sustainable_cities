@@ -45,26 +45,26 @@ flutter run
 ```
 
 # Screenshots of this projects
-## Main page
-![Main Page](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/1.png)
+## Home Page
+![Main Page](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/1.png)
 
-## EarthQuake Quiz
-![EarthQuake Quiz](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/2.png)
+## Quiz
+![EarthQuake Quiz](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/2.png)
 
-## EarthQuake Quiz Result
-![EarthQuake Quiz Result](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/3.png)
+## Quiz Result
+![EarthQuake Quiz Result](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/3.png)
 
 ## EarthQuake Zones
-![EarthQuake Zones](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/4.png)
+![EarthQuake Zones](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/4.png)
 
-## How To Prevent?
-![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/5.png)
+## Precautions
+![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/5.png)
 
-## Effects Of EarthQuake
-![Effects_Of_EarthQuake](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/6.png)
+## Informaion
+![Effects_Of_EarthQuake](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/6.png)
 
-## Emergency
-![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/screenshots/7.png)
+## Emergency Call
+![Emergancy Button](https://raw.githubusercontent.com/merthankavak/sustainable_cities/master/ScreenShots/7.png)
 
 ## Team NiceTRY -- Members:
 ### [Merthan **Kavak**](https://github.com/merthankavak)  
